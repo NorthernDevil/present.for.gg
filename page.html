@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pirka{
+            display: inline-block;
+            text-align: center;
+        }
+        .open{
+            text-align: center;
+        }
+        .porosh>img{
+            width:1500px;
+        }
+        body {
+    background-color: #000000; /* Колір можна змінювати на будь-який інший за бажанням */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.cat {
+    fill: yellow;
+    animation: moveRight 2s ease-in-out infinite;
+}
+
+@keyframes moveRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="open">
+        <div class="pirka">
+            <div class="porosh">
+                <img src="https://media.tenor.com/kWYxKyid874AAAAC/%D0%BA%D1%83%D1%80%D0%B8%D1%82-%D1%81%D0%B8%D0%B3%D0%B0%D1%80%D1%83.gif">
+            </div>
+            <div class="container">
+                <svg width="100" height="100">
+                    <circle class="cat" cx="50" cy="50" r="40" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
